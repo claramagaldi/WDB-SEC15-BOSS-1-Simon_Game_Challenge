@@ -6,11 +6,8 @@ console.log(gamePattern);
 
 function nextSequence() {
   var randomNumber = Math.floor(Math.random()*4);
-  return randomNumber;
+  var randomChosenColour = buttonColours[randomNumber];
+  gamePattern.push(randomChosenColour);
 }
-
-var randomChosenColour = buttonColours[nextSequence()];
-
-gamePattern.push(randomChosenColour);
 
 console.log(gamePattern);
